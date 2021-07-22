@@ -1,0 +1,72 @@
+/* Main Styles */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Solutions Flip Cards */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 275px;
+    perspective: 1000px; /* Gives a 3D-positioned element some perspective */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+    margin: 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    color: #000;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+  
+.flip-card-back {
+    color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back-blue {
+    background-color: rgb(14, 113, 156);
+}
+.flip-card-back-green {
+    background-color: rgb(0, 145, 71);
+}
+.flip-card-back-purple {
+    background-color: rgb(101, 47, 108);
+}
+.flip-card-back-red {
+    background-color: rgb(198, 33, 39);
+}
+.flip-card-back-teal {
+    background-color: rgb(0, 130, 126);
+}
