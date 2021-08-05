@@ -32,6 +32,52 @@ a, a:visited {
     letter-spacing: 0.031rem;
 }
 
+/* Navigation Bar */
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+  
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+  
+/* Style navigation menu links */
+.topnav a {
+    color: rgb(99, 99, 99);
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+  
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: #fff;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+  
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #fff;
+    color: #fff;
+ }
+
+.topnav img {
+    height: 50px;
+}
+
+.topnav a:hover {
+    color: rgb(125, 125, 125);
+}
+
 /* Header */
 
 .header {
