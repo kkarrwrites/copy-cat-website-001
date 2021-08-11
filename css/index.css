@@ -78,6 +78,80 @@ a, a:visited {
     color: rgb(125, 125, 125);
 }
 
+/* Navigation Bar */ /* Redo */
+
+nav {
+    color: rgb(99, 99, 99);
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    color: rgb(99, 99, 99);
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 5px 15px;
+}
+
+nav ul a:hover, nav li a:hover {
+    color: rgb(125, 125, 125);
+}
+
+nav ul ul {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 200px;
+    float: none;
+    display: list-item;
+    background-color: #fff;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul, nav li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 5px;
+    float: left;
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    font-size: 30px;
+    line-height: 70px;
+    padding-left: 20px;
+    display: none;
+}
+
 /* Header */
 
 .header {
@@ -86,6 +160,7 @@ a, a:visited {
     overflow: hidden;
     background:linear-gradient(0deg, rgba(99, 99, 99, 0.5), rgba(99, 99, 99, 0.5)), url(../resources/header_1.jpg);
     background-size: cover;
+    z-index: -1;
 }
 
 .header-text {
