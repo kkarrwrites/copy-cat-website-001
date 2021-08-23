@@ -1,6 +1,3 @@
-// Copyright Year Update
-document.querySelector('#copyright-year').innerText = new Date().getFullYear();
-
 // Navigation Bar
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -10,3 +7,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+// Copyright Year Update in Footer
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
