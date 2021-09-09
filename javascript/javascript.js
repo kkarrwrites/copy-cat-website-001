@@ -8,5 +8,8 @@ function myFunction() {
   }
 }
 
-// Copyright Year Update in Footer
+// Slideshow
+
+
+// Footer - Copyright Year Update
 document.querySelector('#copyright-year').innerText = new Date().getFullYear();
