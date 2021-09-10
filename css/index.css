@@ -133,6 +133,29 @@ a, a:visited {
     padding: 0 0 0.875rem 0;
 }
 
+/* Go to Top Button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 145, 71);; /* Set a background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold;
+  }
+  
+  #myBtn:hover {
+    background-color: #000; /* Add a dark-grey background on hover */
+  }
+
 /* Flip Cards */
 
 .cards-text {
@@ -443,14 +466,14 @@ q {
     margin: 0 1px 0 0;
 }
 
-.fa-twitter {
-    background: #55ACEE;
+.fa-linkedin {
+    background: #007bb5;
     color: #fff;
     margin: 0 1px 0 0;
 }
 
-.fa-linkedin {
-    background: #007bb5;
+.fa-twitter {
+    background: #55ACEE;
     color: #fff;
     margin: 0 1px 0 0;
 }
@@ -458,5 +481,11 @@ q {
 .fa-youtube {
     background: #bb0000;
     color: #fff;
-    margin: 0 0 0 0;
+    margin: 0 1px 0 0;
+}
+
+.fa-wordpress {
+    background: #21759b;
+    color: #fff;
+    margin: 0 1px 0 0;
 }
