@@ -1,18 +1,18 @@
 /* Main Styles */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 html {
     font-size: 100%;
     box-sizing: border-box;
 }
 
-body, footer, h1, h2, h3, p {
-    margin: 0 0 0 0;
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body, footer, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -97,6 +97,16 @@ a, a:visited {
       text-align: left;
     }
 
+}
+
+/* Navigation Bar Take 2 */
+
+nav {
+    display: flex;
+}
+
+nav span {
+    display: block;
 }
 
 /* Header */
