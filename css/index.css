@@ -53,7 +53,7 @@ a, a:visited {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
  }
   
 .topnav a:hover {
@@ -103,10 +103,32 @@ a, a:visited {
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
 }
 
 nav span {
     display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+}
+
+nav span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.headerlinks a {
+    text-decoration: none;
+    color: rgb(125, 125, 125);
+    font-size: 18px;
+    padding: 12px 12px;
+}
+
+.headerlinks a:hover {
+    background-color: rgb(14, 113, 156);
+    color: white;
 }
 
 /* Header */
@@ -157,13 +179,12 @@ nav span {
     color: #fff; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
     font-weight: bold;
   }
   
   #myBtn:hover {
-    background-color: #000; /* Add a dark-grey background on hover */
+    background-color: rgb(14, 113, 156);
   }
 
 /* Flip Cards */
