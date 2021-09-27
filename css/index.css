@@ -99,7 +99,7 @@ a, a:visited {
 
 }
 
-/* Navigation Bar Take 2 */
+/* Navigation Bar Redo */
 
 nav {
     display: flex;
@@ -129,6 +129,23 @@ nav span:not(:last-child) {
 .headerlinks a:hover {
     background-color: rgb(14, 113, 156);
     color: white;
+    transition: background-color 750ms ease-in-out;
+}
+
+@media only screen and (max-width: 45em) {
+
+   .hide-for-mobile {
+       display: none;
+   }
+
+}
+
+@media only screen and (min-width: 45em) {
+
+    .hide-for-desktop {
+        display: none;
+    }
+
 }
 
 /* Header */
