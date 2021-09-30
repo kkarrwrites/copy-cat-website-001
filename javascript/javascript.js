@@ -9,6 +9,10 @@ function myFunction() {
   }
 }
 
+// Navigation Bar Redo
+
+
+
 // Go to Top Button
 
 //Get the button
