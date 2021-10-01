@@ -1,17 +1,23 @@
-// Navigation Bar
+// Navigation Bar https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navmenu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
 
-// Navigation Bar Redo
+const navLink = document.querySelectorAll(".navlink");
 
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
 
 // Go to Top Button
 

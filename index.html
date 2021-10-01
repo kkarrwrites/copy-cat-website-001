@@ -17,39 +17,26 @@
 
 <body>
 
-<!-- Navigation Bar -->
+<!-- Navigation Bar https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
 
-<div class="topnav sticky" id="myTopnav">
-  <a href="#" class="active">Home</a>
-  <a href="#">Solutions</a>
-  <a href="#">About</a>
-  <a href="#">Blog</a>
-  <a href="#">Newsletter</a>
-  <a href="#">Foundation</a>
-  <a href="#">Contact</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-</div>
-
-<!-- Navigation Bar Redo-->
-
-<header>
-  <nav>
-    <a href="#" class="logo"><img src="resources/logo.svg" height="50px" alt="MCN Healthcare"></a>
-    <a href="#" class="hamburger hide-for-desktop">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
-    <div class="headerlinks hide-for-mobile">
-      <a href="#">Solutions</a>
-      <a href="#">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Newsletter</a>
-      <a href="#">Foundation</a>
-      <a href="#">Contact</a>
-    </div>
-  </nav>
-</header>
+  <header class="navheader">
+    <nav class="navbar">
+      <a href="#" class="navlogo"><img src="resources/logo.svg" height="50px" alt="MCN Healthcare"></a>
+      <ul class="navmenu">
+          <li class="navitem"><a href="#" class="navlink">Solutions</a></li>
+          <li class="navitem"><a href="#" class="navlink">About</a></li>
+          <li class="navitem"><a href="#" class="navlink">Blog</a></li>
+          <li class="navitem"><a href="#" class="navlink">Newsletter</a></li>
+          <li class="navitem"><a href="#" class="navlink">Foundation</a></li>
+          <li class="navitem"><a href="#" class="navlink">Contact</a></li>
+      </ul>
+      <a class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+    </nav>
+  </header>
 
 <!-- Header -->
 

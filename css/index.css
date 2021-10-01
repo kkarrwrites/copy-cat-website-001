@@ -6,8 +6,8 @@ html {
 }
 
 *, *::before, *::after {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
@@ -38,95 +38,49 @@ a, a:visited {
     letter-spacing: 0.031rem;
 }
 
-/* Navigation Bar */
+/* Navigation Bar https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
 
-.topnav {
-    overflow: hidden;
-    background-color: #fff;
-    z-index: 2;
-  }
-  
-.topnav a {
-    float: left;
-    display: block;
-    color: rgb(125, 125, 125);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
- }
-  
-.topnav a:hover {
-    background-color: rgb(0, 145, 71);
-    color: #fff;
-}
-  
-.topnav a.active {
-    background-color: rgb(14, 113, 156);
-    color: white;
-}
-  
-.topnav .icon {
-    display: none;
-}
-
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-}
-  
-@media screen and (max-width: 40em) {
-
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-
-}
-
-/* Navigation Bar Redo */
-
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px;
 }
 
-nav span {
+.hamburger {
+    display: none;
+}
+
+.bar {
     display: block;
     width: 25px;
-    height: 2px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: #000;
 }
 
-nav span:not(:last-child) {
-    margin-bottom: 5px;
+.navmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
 }
 
-.headerlinks a {
+.navitem {
+    margin-left: 12px;
+    list-style: none;
+}
+
+.navlink {
     text-decoration: none;
     color: rgb(125, 125, 125);
     font-size: 18px;
     padding: 12px 12px;
 }
 
-.headerlinks a:hover {
+.navlink:hover {
     background-color: rgb(14, 113, 156);
     color: white;
     transition: background-color 750ms ease-in-out;
@@ -134,16 +88,43 @@ nav span:not(:last-child) {
 
 @media only screen and (max-width: 45em) {
 
-   .hide-for-mobile {
-       display: none;
-   }
+    .navmenu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
 
-}
+    .navmenu.active {
+        left: 0;
+    }
 
-@media only screen and (min-width: 45em) {
+    .navitem {
+        margin: 1.5rem 0;
+    }
 
-    .hide-for-desktop {
-        display: none;
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
 }
